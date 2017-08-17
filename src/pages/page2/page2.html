@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page Two</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+<ion-grid>
+<ion-row>
+  <ion-slides [options]="mySlideOptions">
+    <ion-slide *ngFor="let item of items">
+      <img src="images/1.jpeg">
+    </ion-slide>
+  </ion-slides>
+</ion-row>
+  <ion-row wrap>
+  <ion-col width-33 *ngFor="let item of items">
+
+    <ion-card>
+      <img src="images/tap.png"/>
+    </ion-card>
+  </ion-col>
+
+  </ion-row>
+</ion-grid>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> -->
+</ion-content>

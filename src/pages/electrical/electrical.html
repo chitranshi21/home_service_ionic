@@ -1,0 +1,36 @@
+<!--
+  Generated template for the Electrical page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>electrical</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item *ngFor="let electricalService of electricalServiceList">
+<ion-label color="primary" floating>{{electricalService.name}}</ion-label>
+<ion-select [(ngModel)]="electricalService.selectedList" 
+(ngModelChange)="updateSelectedList()" multiple="true">
+	<ion-option *ngFor="let comp of electricalService.component">{{comp}}</ion-option>
+</ion-select>
+	
+</ion-item>
+<ion-label color="primary" stacked>Service for : </ion-label>
+<ion-item><ion-label>{{selectedList}}</ion-label></ion-item>
+
+<ion-label color="primary" stacked>Description :</ion-label>
+	<ion-textarea placeholder="please explain the problem " size="auto" [(ngModel)]="description"></ion-textarea>
+<ion-item-divider>
+</ion-item-divider>
+
+	<button ion-button full (click)="onclickNext()">Next</button>
+
+
+</ion-content>
