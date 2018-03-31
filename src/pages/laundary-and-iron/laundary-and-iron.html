@@ -1,0 +1,40 @@
+<!--
+  Generated template for the Carpentry page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Laundary And Iron</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-item *ngFor="let laundaryService of laundaryList">
+<ion-label color="primary" floating>{{laundaryService.name}}</ion-label>
+<ion-select [(ngModel)]="laundaryService.selectedList" 
+(ngModelChange)="updateSelectedList()" multiple="true">
+	<ion-option *ngFor="let comp of laundaryService.component">{{comp}} 
+  <ion-icon name="remove-circle" (click)="decrement()">
+  {{currentNumber}}
+  <ion-icon name="add-circle" (click)="increment()">
+  </ion-option>
+</ion-select>
+	
+</ion-item>
+<ion-label color="primary" stacked>Service for : </ion-label>
+<ion-item><ion-label>{{selectedList}}</ion-label></ion-item>
+
+<ion-label color="primary" stacked>Description :</ion-label>
+	<ion-textarea placeholder="please explain the problem " size="auto" [(ngModel)]="description"></ion-textarea>
+<ion-item-divider>
+</ion-item-divider>
+
+	<button ion-button full (click)="onclickNext()">Next</button>
+
+</ion-content>

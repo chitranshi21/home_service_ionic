@@ -72,12 +72,55 @@ export enum Service{
 	BEAUTY = <any> "BEAUTY",
 	BUSINESS_SERVICE = <any> "BUSINESS_SERVICE",
 	PERSONAL_SERVICE = <any> "PERSONAL_SERVICE",
+	LAUNDARY_IRON = <any> "LAUNDARY_IRON",
 	OTHERS = <any> "OTHERS"
+}
+
+export enum LaundaryEnum{
+	FULL_SHIRT = <any> "FULL SHIRT",
+	HALF_SHIRT = <any> "HALF SHIRT",
+	TROUSERS = <any> "TROUSERS",
+	JEANS = <any> "JEANS",
+	KURTA = <any> "KURTA",
+	PAIJAMA = <any> "PAIJAMA",
+	SHORTS = <any> "SHORTS",
+	TRACKSUIT = <any> "TRACKSUIT",
+	SUITS = <any> "SUITS",
+	SHERWANI = <any> "SHERWANI",
+	COAT_BLAZER = <any> "COAT/BLAZER",
+	WAIST_COAT = <any> "WAIST COAT",
+	DHOTI = <any> "DHOTI",
+	SWEATER = <any> "SWEATER",
+	SWEATSHIRT = <any> "SWEATSHIRT",
+	JACKET_NORMAL = <any> "JACKET NORMAL",
+	JACKET_WOOLEN =<any> "JACKET WOOLEN",
+	JACKET_LEATHER = <any>"JACKET LEATHER",
+	OVERCOAT = <any>"OVERCOAT",
+	DUPATTA = <any> "DUPATTA",
+	SALWAR_TROUSER = <any> "SALWAR TROUSER",
+	LADIES_KURTA = <any> "KURTA",
+	SKIRT = <any> "SKIRT",
+	SAREE_COTTON = <any> "SAREE COTTON",
+	BLOUSE = <any> "BLOUSE",
+	WESTERN_TOP = <any> "WESTERN TOP",
+	PETTICOAT = <any> "PETTI COAT",
+	SAREE_SILK = <any> "SAREE SILK",
+	LEHENGA = <any>"LEHENGA",
+	WOMEN_GOWN = <any>"WOMEN GOWN",
+	MUFFLER = <any>"MUFFLER",
+	SHAWL = <any>"SHAWL",
+	BEDSHEET_SINGLE = <any>"BEDSHEET SINGLE",
+	BEDHSEET_DOUBLE = <any>"BEDSHEET DOUBLE",
+	BLANKET = <any>"BLANKET",
+	TABLE_CLOTH = <any>"TABLE CLOTH",
+	CURTAINS = <any> "CURTAINS",
+
+
 }
 
 export const CityList: Array<{display_name:string, value:string}> = [
 			{
-				display_name: "Lucknow",
+			display_name: "Lucknow",
 				value: "LUCKNOW"
 			}
 		]

@@ -14,6 +14,7 @@ import { AddressPage } from '../pages/address/address';
 import { ElectricalPage } from '../pages/electrical/electrical';
 import { CarpentryPage } from '../pages/carpentry/carpentry';
 import { AppliancesPage } from '../pages/appliances/appliances';
+import { LaundaryAndIronPage } from '../pages/laundary-and-iron/laundary-and-iron';
 import { CarsandbikesPage } from '../pages/carsandbikes/carsandbikes';
 import { BeautyPage } from '../pages/beauty/beauty';
 import { BusinessPage } from '../pages/business/business'; 
@@ -37,6 +38,7 @@ import { Utils } from '../providers/utils';
     PlumbingPage,
     AddressPage,
     ElectricalPage,
+    LaundaryAndIronPage,
     CarpentryPage,
     AppliancesPage,
     CarsandbikesPage,
@@ -65,6 +67,7 @@ import { Utils } from '../providers/utils';
     CarpentryPage,
     AppliancesPage,
     CarsandbikesPage,
+    LaundaryAndIronPage,
     BeautyPage,
     BusinessPage,
     PersonalPage,

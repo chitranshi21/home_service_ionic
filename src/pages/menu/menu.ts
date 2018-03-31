@@ -5,11 +5,11 @@ import { PlumbingPage } from '../plumbing/plumbing';
 import { ElectricalPage } from '../electrical/electrical';
 import { CarpentryPage } from '../carpentry/carpentry'; 
 import { AppliancesPage } from '../appliances/appliances';
-import { CarsandbikesPage } from '../carsandbikes/carsandbikes';
 import { BeautyPage } from '../beauty/beauty';
 import { BusinessPage } from '../business/business';
 import { PersonalPage } from '../personal/personal';
 import { OtherPage } from '../other/other';
+import { LaundaryAndIronPage } from '../laundary-and-iron/laundary-and-iron';
 /*
   Generated class for the Menu page.
 
@@ -48,9 +48,9 @@ export class MenuPage {
   							page:AppliancesPage
   						},
   						{
-  							name:"Cars and Bikes",
-  							image:"images/car_repair_icon.png",
-  							page:CarsandbikesPage
+  							name:"Laundary and Iron",
+  							image:"images/appliance_icon.png",
+  							page:LaundaryAndIronPage
   						},
   						{
   							name:"Beauty",
